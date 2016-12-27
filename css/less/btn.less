@@ -1,0 +1,99 @@
+@import (reference) "var";
+
+.btn {
+  border: @border-thickness solid transparent;
+  border-radius: @border-radius;
+  color: @btnTextDark;
+  display: inline-block;
+  font-family: @body-font-family;
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+  padding: 1.75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .3s ease;
+
+  &:hover, &:focus {
+    color: @btnTextDark;
+    text-decoration: none;
+  }
+
+  & + .btn {
+    margin-left: 15px;
+  }
+
+  &--sm {
+    padding: 1rem;
+  }
+
+  &--md {
+    padding: 1.5rem;
+  }
+
+  &--lg {
+    padding: 2rem;
+    font-size: 2.2rem;
+  }
+
+  &--primary {
+    background-color: @primary;
+    border-bottom: @border-thickness solid @primaryDark;
+
+    &:hover, &:focus {
+      background-color: @primaryDark;
+    }
+
+    &.btn--outline {
+      background-color: #fff;
+      border-color: @primary;
+      color: @primaryDark;
+      &:hover, &:focus {
+        color: @btnTextDark;
+        background-color: @primaryDark;
+        border-color: @primaryDark;
+      }
+    }
+
+    &.btn--link {
+      background-color: #fff;
+      border-color: transparent;
+      color: @primaryDark;
+      &:hover, &:focus {
+        color: @btnTextDark;
+        background-color: @primaryDark;
+        border-color: @primaryDark;
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: @secondary;
+    border-bottom: @border-thickness solid @secondaryDark;
+
+    &:hover, &:focus {
+      background-color: @secondaryDark;
+    }
+
+    &.btn--outline {
+      background-color: #fff;
+      border-color: @secondary;
+      color: @secondaryDark;
+      &:hover, &:focus {
+        color: @btnTextLight;
+        background-color: @secondaryDark;
+        border-color: @secondaryDark;
+      }
+    }
+
+    &.btn--link {
+      background-color: #fff;
+      border-color: transparent;
+      color: @secondaryDark;
+      &:hover, &:focus {
+        color: @btnTextLight;
+        background-color: @secondaryDark;
+        border-color: @secondaryDark;
+      }
+    }
+  }
+}
