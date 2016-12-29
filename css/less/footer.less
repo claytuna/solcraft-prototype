@@ -4,7 +4,38 @@
   background-color: #333;
   border-top: 1px solid #000;
   color: #fff;
-  padding: 4rem 0 8rem;
+  padding: 5rem 0 8rem;
+
+  &__logo {
+      background-image: url('../img/logo-solcraft-medical-white.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: transparent;
+      display: inline-block;
+      height: 50px;
+      margin-bottom: 3rem;
+      width: 217px;
+
+      &:hover, &:focus {
+        color: transparent;
+      }
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin-top: 0;
+    li {
+      font-size: 1.8rem;
+      padding: .5rem 0;
+      a {
+        color: @secondary;
+        padding: 1rem;
+      }
+    }
+  }
 
   &__copyright {
     color: #848484;
